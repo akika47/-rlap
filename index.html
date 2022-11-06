@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            Megrendelő neve: <input type="text" id="nev" onfocus="szinezesNev()" onblur="visszaAllitasNev()"><br>
+            Megrendelő címe: <input type="text" id="cim" onfocus="szinezesCim()" onblur="visszaAllitasCim()"><br>
+            Megrendelő telefonszáma: <input type="telefon" value="+36" id="telefon" onfocus="szinezesTel()" onblur="visszaAllitasTel()"><br>
+            <input type="button" value="Elküld" onclick="beillesztes()">
+        </fieldset>
+        <fieldset>
+            <h2><span id="feherHatter">Vissza igazolás!</span></h2>
+            <p>Név: <span id="visszaIgazNev">?</span></p>
+            <p>Cím:<span id="visszaIgazCim">?</span></p>
+            <p>Telefon:<span id="visszaIgazTelefon">?</span></p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
